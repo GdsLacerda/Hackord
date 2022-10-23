@@ -28,7 +28,7 @@ Join our [discord server](https://discord.gg/KCqrbVgSBF)!
 Don't trust our pre-compiled binaries?  
 Here we will teach you how you can run from source code.  
 Note for Linux users: As your case is a little bit diffrent documentation (or kinda lack of it) has been moved to [Running under Linux Section](#running-under-linux).  
-Also as we mentioned in [FAQ](#faq), we are creating Hackord for windows and MacOS/Linux is not supported. While we give instruction on how run it, we can't be 100% if it is going to run under those platforms. And we are not planning on adding support any time soon.
+Also as we mentioned in [FAQ](#faq), we are creating instagen for windows and MacOS/Linux is not supported. While we give instruction on how run it, we can't be 100% if it is going to run under those platforms. And we are not planning on adding support any time soon.
 
 #### Downloading Python (Windows/MacOS)
 Hackord is using Python 3.10.4.  
@@ -43,7 +43,7 @@ And type `python --version` or `python3.10 --version`. if you see output saying 
 Now to download source code go to [code tab](https://github.com/WieszakWare/Hackord). Under the green `Code \/` menu, you can click `Download ZIP`. Now unzip the contest and for simplify documentation I will have path pointent to your desktop.
 MACOS NOTE: In [Drivers](https://github.com/WieszakWare/Hackord) folder, replace chrome driver with Chrome Driver for MacOS, you can download it from [official chrome webiste](https://chromedriver.chromium.org/) and replace gecko driver witb Firefox Driver for MacOS, you can download it from [official firefox github page](https://github.com/mozilla/geckodriver/releases).  
 Once you have unziped you can execute the following commands:  
-NOTE: Replace the path to Hackord with your own path, and replace python with python3 or python3.10 if it is the command you have python bind to.  
+NOTE: Replcae the path to Hackord with your own path, and replace python with python3 or python3.10 if it is the command you have python bind to.  
 For Windows:
 ```
 cd C:\Users\USER_USERNAME\Desktop\Hackord
@@ -71,3 +71,33 @@ MacOS:
 ```
 cd ~/Desktop/Hackord && venv/bin/activate && python main.py && venv/bin/deactivate
 ```
+
+
+### Running under Linux
+As it's pain in the ass compyling and supporting all linux distributions you will have to do some work for yourself.
+
+#### Downloading Python (Linux)
+Here I can't help because there just so many package managers, so this I am leaving up to you to find out how to install Python 3.10.4 on your specific distribution.
+
+#### Downloading code and preparing envrioment (Linux)
+Now to download source code go to [code tab](https://github.com/WieszakWare/Hackord). Under the green `Code \/` menu, you can click `Download ZIP`. Now unzip the contest and for simplify documentation I will have path pointent to your desktop.
+NOTE: In [Drivers](https://github.com/WieszakWare/Hackord/) folder, replace chrome driver with Chrome Driver for Linux, you can download it from [official chrome webiste](https://chromedriver.chromium.org/) and replace gecko driver witb Firefox Driver for Linux, you can download it from [official firefox github page](https://github.com/mozilla/geckodriver/releases).  
+Once you have unziped you can execute the following commands:  
+NOTE: Replcae the path to Hackord with your own path, and replace python with python3 or python3.10 if it is the command you have python bind to. 
+```
+cd ~/Desktop/Hackord
+python -m venv venv
+venv/bin/activate
+pip install -r requirements.txt
+venv/bin/deactivate
+```
+
+#### Running code (Linux)
+Now everytime you want to launch Hackord from source you have to type following command.
+```
+cd ~/Desktop/Hackord && venv/bin/activate && python main.py && venv/bin/deactivate
+```
+
+Lefeuware 2022, Licensed under [GPL V2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)  
+[YouTube Lefeu](https://youtube.com/c/WieszakXD)  
+[Instagram @wieszakyt](http://instagram.com/wieszakyt)
