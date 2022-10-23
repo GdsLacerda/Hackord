@@ -5,6 +5,9 @@ Before asking for help please read FAQ.
 Do you want to get touch in touch with us?  
 Join our [discord server](https://discord.gg/KCqrbVgSBF)!
 
+![Hackord_Raid_Tool](https://user-images.githubusercontent.com/111588764/197411800-c222cc24-744e-424f-b0bd-e0a5ade83293.png)
+
+
 ### FAQ  
 **Q:** What is Hackord?  
 **A:** Hackord is open source advenced Discord raid tool / account generator.
