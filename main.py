@@ -16,7 +16,7 @@ try:
     import mailslurp_client
     #print(f"[ IMPORT ] Import Successfull {mailslurp_client.__loader__}, {mailslurp_client.__package__}, {mailslurp_client.__file__}")
 except ImportError:
-    print(F"[ ERROR ] Unable to import module ConfigParser")
+    print(F"[ ERROR ] Unable to import module MailSlurp Client")
 try:
     import configparser
     #print(f"[ IMPORT ] Import Successfull {configparser.__loader__}")
