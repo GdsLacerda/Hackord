@@ -33,7 +33,7 @@ import modules.exceptions
 
     
 try:
-    import undetected-chromedriver as uc
+    import undetected_chromedriver as uc
     from selenium.common.exceptions import (
         ElementClickInterceptedException,
         ElementNotInteractableException
