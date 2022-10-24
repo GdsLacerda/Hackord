@@ -1,4 +1,4 @@
-# **Hackord**
+# **Hackord V1 ( V2 Coming Soon )**
 [![Generic badge](https://img.shields.io/badge/Python%20Version-3.10.4-blue.svg)](https://www.python.org/downloads/release/python-3104/)  
 [![Generic badge](https://img.shields.io/badge/Hackord%20Version-V1.0.3-red.svg)](https://github.com/WieszakWare/Hackord/releases)  
 ## Powerful next-gen discord account generator made in python3.
