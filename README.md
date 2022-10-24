@@ -1,103 +1,81 @@
-# Hackord v1 [ v2 Coming Soon ]
-### A new powerfull tool for automatic account creation of [Discord](https://discord.com/) accounts
+# **Hackord**
+[![Generic badge](https://img.shields.io/badge/Python%20Version-3.10.4-blue.svg)](https://www.python.org/downloads/release/python-3104/)  
+[![Generic badge](https://img.shields.io/badge/Hackord%20Version-V1.0.3-red.svg)](https://github.com/WieszakWare/Hackord/releases)  
+## Powerful next-gen discord account generator made in python3.
+&nbsp;  
+## **FAQ**
 
-Before asking for help please read FAQ.  
-Do you want to get touch in touch with us?  
-Join our [discord server](https://discord.gg/KCqrbVgSBF)!
-
-![Hackord_Raid_Tool](https://user-images.githubusercontent.com/111588764/197411800-c222cc24-744e-424f-b0bd-e0a5ade83293.png)
-
-
-### FAQ  
 **Q:** What is Hackord?  
-**A:** Hackord is open source advenced Discord raid tool / account generator.
+**A:** Hackord is automation tool for creation of discord account. 
 
-**Q:** Is it a virus?  
-**A:** No it isn't, and if you don't trust us, you can look at [source code](https://github.com/WieszakWare/Hackord) of our program or even run/compile from [source](#how-to-runcompile-from-source)!
+**Q:** Why this even exists? I can create accounts manually.  
+**A:** Creating accounts manually is absolute hassle, and you can be heavily rate limited by discord or sometimes even blocked for several days! Hackord aims to automate this process and also to bypass discord's limits.
 
-**Q:** Hey you can change this and this and...  
-**A:** If you would like to change/patch something in Hackord, you can always fork this project and create pull request.
+**Q:** How can I be sure that it's not a virus?  
+**A:**  As Hackord is open source you can look yourself into code and check what it is really doing, so it would be kinda stupid from our side to do anything sketchy.
 
-**Q:** Is Linux/MacOS supported?  
-**A:** For now we are not planning to add Linux/MacOS support, but we included intrustion on how to run from source for MacOS and linux too, so if you want you should be able to try, but we do not promise that code will be working on those platforms.
+**Q:** Can I modify/redistribute Hackord?  
+**A:** Hackord is licensed under [GPL V2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt), so it means, **yes**.
 
-**Q:** Can I republish/modify this project?  
-**A:** This project is licensed under [GPL V2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt).
+**Q:** How do I run this?  
+**A:** Please refer to [Running Hackord](#running-hackord).
 
-### How to run/compile from source.
-Don't trust our pre-compiled binaries?  
-Here we will teach you how you can run from source code.  
-Note for Linux users: As your case is a little bit diffrent documentation (or kinda lack of it) has been moved to [Running under Linux Section](#running-under-linux).  
-Also as we mentioned in [FAQ](#faq), we are creating instagen for windows and MacOS/Linux is not supported. While we give instruction on how run it, we can't be 100% if it is going to run under those platforms. And we are not planning on adding support any time soon.
+**Q:** Can you add feature `x` and `y`.  
+**A:** If you want to propose some features you can join our [discord server](https://discord.com/invite/KCqrbVgSBF) and discuss them in [leafuware-suggestions](https://discord.com/channels/943896316373766174/1034132943284748388).
 
-#### Downloading Python (Windows/MacOS)
-Hackord is using Python 3.10.4.  
-You can download it from [official python website.](https://www.python.org/downloads/release/python-3104/).  
-Also make sure you have `Add Python 3.10.4 to PATH` checked at the bottom.  
-Now to make sure you have installed python,  
-- **On Windows**: Press Windows button and search for `cmd` or `Command Prompt`.
-- **On MacOS**: Idk, I don't use it just open your terminal.
-And type `python --version` or `python3.10 --version`. if you see output saying that python version is 3.10.4 it means that you have sucessfully installed python, if not then it means that you have screwd something up. And please don't create issues or beg for help with installing python, just google the tutorial.
+**Q:** I got problem, how the f\*\*\* am I supposed to fix it?  
+**A:** First make sure you have [properly setup hackord](#running-hackord), if you believe you have done everything right, you can open new [issue](https://github.com/WieszakWare/Hackord/issues/new) here on github, but because not everyone have github you can also submit them on our [discord server](https://discord.com/invite/KCqrbVgSBF) in [leafuware-help](https://discord.com/channels/943896316373766174/1033350704972189716) channel.
 
-#### Downloading code and preparing envrioment (Windows/MacOS)
-Now to download source code go to [code tab](https://github.com/WieszakWare/Hackord). Under the green `Code \/` menu, you can click `Download ZIP`. Now unzip the contest and for simplify documentation I will have path pointent to your desktop.
-MACOS NOTE: In [Drivers](https://github.com/WieszakWare/Hackord) folder, replace chrome driver with Chrome Driver for MacOS, you can download it from [official chrome webiste](https://chromedriver.chromium.org/) and replace gecko driver witb Firefox Driver for MacOS, you can download it from [official firefox github page](https://github.com/mozilla/geckodriver/releases).  
-Once you have unziped you can execute the following commands:  
-NOTE: Replcae the path to Hackord with your own path, and replace python with python3 or python3.10 if it is the command you have python bind to.  
-For Windows:
-```
-cd C:\Users\USER_USERNAME\Desktop\Hackord
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-venv\Scripts\deactivate
-```
-For MacOS:
-```
-cd ~/Desktop/Hackord
-python -m venv venv
-venv/bin/activate
-pip install -r requirements.txt
-venv/bin/deactivate
-```
-
-#### Running code (Windows/MacOS)
-Now everytime you want to launch Hackord from source you have to type following command.
-Windows:
-```
-cd C:\Users\USER_USERNAME\Desktop\Hackord && venv\Scripts\activate && python main.py && venv\Scripts\deactivate
-```
-MacOS:
-```
-cd ~/Desktop/Hackord && venv/bin/activate && python main.py && venv/bin/deactivate
-```
+**Q:** I have made some changes/fixes, can I submit them.  
+**A:** **Of course!** We appreciate all help from our community and are open to any contribution made into our projects.
 
 
-### Running under Linux
-As it's pain in the ass compyling and supporting all linux distributions you will have to do some work for yourself.
+## **Running Hackord**
+Some notes before we start.  
+- Owner of Hackord is developing on Windows and because we don't have infinite time we can not test Hackord on Linux/Mac OS so if you happen to be running one of those and ran into issue, please report it as our goal is to make Hackord platform independent.  
+- For now Hackord V1 relies on  `chromedriver`, because of first point, we can not test other binaries of chromedriver, so please replace it with binary corresponding to your system, you can download them from [official chromium website](https://chromedriver.chromium.org/downloads).
+- For the sake of simplicity I am going to assume Hackord's folder is located on your desktop.
 
-#### Downloading Python (Linux)
-Here I can't help because there just so many package managers, so this I am leaving up to you to find out how to install Python 3.10.4 on your specific distribution.
+1. Download Hackord src.  
+    *Option 1*: Download through github's interface.  
+    ![Download Image](./README_images/download.png)  
+    **Note: You have to extract files from zip file.**  
 
-#### Downloading code and preparing envrioment (Linux)
-Now to download source code go to [code tab](https://github.com/WieszakWare/Hackord). Under the green `Code \/` menu, you can click `Download ZIP`. Now unzip the contest and for simplify documentation I will have path pointent to your desktop.
-NOTE: In [Drivers](https://github.com/WieszakWare/Hackord/) folder, replace chrome driver with Chrome Driver for Linux, you can download it from [official chrome webiste](https://chromedriver.chromium.org/) and replace gecko driver witb Firefox Driver for Linux, you can download it from [official firefox github page](https://github.com/mozilla/geckodriver/releases).  
-Once you have unziped you can execute the following commands:  
-NOTE: Replcae the path to Hackord with your own path, and replace python with python3 or python3.10 if it is the command you have python bind to. 
-```
-cd ~/Desktop/Hackord
-python -m venv venv
-venv/bin/activate
-pip install -r requirements.txt
-venv/bin/deactivate
-```
+    *Option 2*: Download using git.
+    ```
+    git clone --depth 1 https://github.com/WieszakWare/Hackord.git
+    ```
+2. Install Python 3.10.4, for **Windows** and **Mac OS** we recommend to download it from [python's website](https://www.python.org/downloads/release/python-3104/), and for **Linux** users use package manager of your choice and install it from your repositories.
+3. Open Terminal/Konsole for your system.  
+    **Windows**: Start Menu -> Type `cmd`.  
+    **Linux**: Idk, just open terminal of your choice, shell... bash or zsh. Doesn't really matter.  
+    **Mac OS**: Idk, I don't use mac but you should have terminal somewhere.
+4. Navigate to Hackord's folder.  
+    NOTE: Make sure that you replace `[HACKORD_FOLDER]` with name of your Hackord folder.  
+    **Windows**:
+    ```
+    cd %USERPROFILE%/Desktop/[HACKORD_FOLDER]
+    ```
+    **Linux**:
+    ```
+    cd ~/Desktop/[HACKORD_FOLDER]
+    ```
+    **Mac OS**:
+    ```
+    cd ~/Desktop/[HACKORD_FOLDER]
+    ```
+5. Now type
+    ```
+    python main.py
+    ```
+    to launch Hackord.  
+    In case you get `command "python" not found`, make sure you have installed Python properly as shown in step number 2.
+    If you get error `can't open file 'main.py'`, make sure you have navigated into Hackord's directory as shown in step number 4.
 
-#### Running code (Linux)
-Now everytime you want to launch Hackord from source you have to type following command.
-```
-cd ~/Desktop/Hackord && venv/bin/activate && python main.py && venv/bin/deactivate
-```
-
-Lefeuware 2022, Licensed under [GPL V2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)  
-[YouTube Lefeu](https://youtube.com/c/WieszakXD)  
-[Instagram @wieszakyt](http://instagram.com/wieszakyt)
+### **That's it!**
+You have just installed Hackord!  
+We hope that you are going to enjoy our program.
+&nbsp;  
+&nbsp;  
+# **!!! DISCLAIMER !!!**
+## **FOR EDUCATIONAL PURPOSES ONLY. HACKORD COMES WITH ABSOLUTELY NO WARRANTY. DEVELOPER/CONTRIBUTORS ARE NOT RESPONSIBLE FOR ANY DAMAGED CAUSED BY HACKORD OR ANY ACTION OF THE USER! USE IT AT YOUR OWN RISK!**
