@@ -2,6 +2,9 @@
 [![Generic badge](https://img.shields.io/badge/Python%20Version-3.10.4-blue.svg)](https://www.python.org/downloads/release/python-3104/)  
 [![Generic badge](https://img.shields.io/badge/Hackord%20Version-V1.0.3-red.svg)](https://github.com/WieszakWare/Hackord/releases)  
 [![Downloads](https://img.shields.io/github/downloads/WieszakWare/Hackord/total?label=Downloads&style=for-the-badge)](https://github.com/WieszakWare/Hackord/releases/latest)
+[![Stars](https://img.shields.io/github/stars/wieszakware/hackord?label=Stars&style=for-the-badge)](https://github.com/wieszakware/hackord/stargazers)
+[![Forks](https://img.shields.io/github/forks/wieszakware/hackord?label=Forks&style=for-the-badge)](https://github.com/wieszakware/hackord/network/members)
+[![License](https://img.shields.io/github/license/wieszakware/hackord?style=for-the-badge)](https://github.com/wieszakware/hackord/blob/master/LICENSE)
 ## Powerful next-gen discord account generator made in python3.
 
 ![Hackord_Raid_Tool](https://user-images.githubusercontent.com/111588764/197583768-3f98952d-a024-4464-9425-6ff6ae446137.png)
