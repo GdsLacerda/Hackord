@@ -1,6 +1,7 @@
 # **Hackord V1 ( V2 Coming Soon )**
 [![Generic badge](https://img.shields.io/badge/Python%20Version-3.10.4-blue.svg)](https://www.python.org/downloads/release/python-3104/)  
 [![Generic badge](https://img.shields.io/badge/Hackord%20Version-V1.0.3-red.svg)](https://github.com/WieszakWare/Hackord/releases)  
+[![Downloads](https://img.shields.io/github/downloads/extatent/Phoenix-Nuker/total?label=Downloads&style=for-the-badge)](https://github.com/WieszakWare/Hackord/releases/latest)
 ## Powerful next-gen discord account generator made in python3.
 
 ![Hackord_Raid_Tool](https://user-images.githubusercontent.com/111588764/197583768-3f98952d-a024-4464-9425-6ff6ae446137.png)
