@@ -103,10 +103,7 @@ But as much as we love for it to be perfect, it can't be, just like in any other
 **Note 3**: If you haven't please read [FAQ](#FAQ) and [running hackord](#running-hackord), ***BEFORE*** submitting issues.
 ### **HACKORD CONSOLE OUTPUT WARNING**
 **WARNING: For operating/convenience/logging purposes Hackord may or may not display sensitive information for like device/hardware identifiers, user defined proxies, account names, email servers and tokens. It's your responsibility to black out those information as every issue reported will be publicly available and WE DO NOT TAKE ANY RESPONSIBILITY FOR YOUR MISTAKES.**
-
-
-
-&nbsp;  
+ 
 &nbsp;  
 # **!!! DISCLAIMER !!!**
 ## **FOR EDUCATIONAL PURPOSES ONLY. HACKORD COMES WITH ABSOLUTELY NO WARRANTY. DEVELOPER/CONTRIBUTORS ARE NOT RESPONSIBLE FOR ANY DAMAGED CAUSED BY HACKORD OR ANY ACTION OF THE USER! USE IT AT YOUR OWN RISK!**
