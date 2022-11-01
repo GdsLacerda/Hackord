@@ -1,4 +1,4 @@
-# **HACKORD**
+### **HACKORD**
 ![HACKORD - CUTTING EDGE DISCORD ACCOUNT CREATION TOOL - WRITEN IN PYTHON3 BY LEFEU (We were unable to load banner, \*shrug\*)](./README_images/hackord_banner.png)
 ![Hackord Version](https://img.shields.io/github/v/release/WieszakWare/Hackord?color=red&include_prereleases&label=HACKORD%20VERSION&style=for-the-badge)
 [![Python Version](https://img.shields.io/badge/PYTHON%20VERSION-3.10.4-blue.svg?style=for-the-badge)](https://www.python.org/downloads/release/python-3104/)
