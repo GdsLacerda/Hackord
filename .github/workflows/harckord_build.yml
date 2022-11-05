@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  package_for_windows:
+  package_windows:
     runs-on: windows-latest
     steps:
       - name: Download WieszakWare/hackord_src
@@ -41,3 +41,43 @@ jobs:
 
       - name: Package for windows.
         run: pyinstaller --noconfirm --onefile --console --icon "NONE" --upx-dir "${{ github.workspace }}/upx-4.0.0-win64" --clean --log-level "ERROR" --add-data "${{ github.workspace }}/mod;mod/" --add-data "${{ github.workspace }}/haisolver;haisolver/"  "${{ github.workspace }}/HackordV2.py"
+
+      - name: Test
+        run: dir
+
+  package_linux:
+      runs-on: linux-latest
+      steps:
+        - name: Download WieszakWare/hackord_src
+          uses: actions/checkout@v2.5.0
+          with:
+            repository: WieszakWare/hackord_src
+            token: ${{ secrets.hackord_src_token }}
+
+        - name: Download UPX
+          uses: robinraju/release-downloader@v1.6
+          with: 
+            repository: "upx/upx"
+            latest: false
+            tag: "v4.0.0"
+            fileName: "upx-4.0.0-amd64_linux.tar.xz"
+            tarBall: false
+            zipBall: false
+            out-file-path: ""
+
+        - name: Extract UPX
+          run: 7z x ./upx-4.0.0-amd64_linux.tar.xz
+
+        - name: Setup Python
+          uses: actions/setup-python@v4.3.0
+          with:
+            python-version: 3.10.4 
+
+        - name: Install PyInstaller
+          run: pip install pyinstaller
+
+        - name: Package for linux.
+          run: pyinstaller --noconfirm --onefile --console --icon "NONE" --upx-dir "${{ github.workspace }}/upx-4.0.0-amd64_linux" --clean --log-level "ERROR" --add-data "${{ github.workspace }}/mod;mod/" --add-data "${{ github.workspace }}/haisolver;haisolver/"  "${{ github.workspace }}/HackordV2.py"
+
+        - name: Test
+          run: ls -la
