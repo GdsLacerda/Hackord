@@ -35,6 +35,9 @@ jobs:
         uses: actions/setup-python@v4.3.0
         with:
           python-version: 3.10.4 
+          
+      - name: Install Python Packages
+        run: pip install -r requirements.txt
 
       - name: Install PyInstaller
         run: pip install pyinstaller
@@ -42,13 +45,10 @@ jobs:
       - name: Package for windows.
         run: pyinstaller --noconfirm --onefile --console --icon "NONE" --upx-dir "${{ github.workspace }}/upx-4.0.0-win64" --clean --log-level "ERROR" --add-data "${{ github.workspace }}/mod;mod/" --add-data "${{ github.workspace }}/haisolver;haisolver/"  "${{ github.workspace }}/HackordV2.py"
 
-      - name: Test
-        run: dir ./dist
-
       - name: Save Hackord Windows Executable
         uses: actions/upload-artifact@v3
         with:
-          name: hackord_windows
+          name: hackord_windows.zip
           path: ${{ github.workspace }}/dist/*
 
 #   package_linux:
@@ -79,17 +79,17 @@ jobs:
 #           with:
 #             python-version: 3.10.4 
 
+#         - name: Install Python Packages
+#           run: pip install -r requirements.txt
+
 #         - name: Install PyInstaller
 #           run: pip install pyinstaller
 
 #         - name: Package for linux.
 #           run: pyinstaller --noconfirm --onefile --console --icon "NONE" --upx-dir "${{ github.workspace }}/upx-4.0.0-amd64_linux" --clean --log-level "ERROR" --add-data "${{ github.workspace }}/mod;mod/" --add-data "${{ github.workspace }}/haisolver;haisolver/"  "${{ github.workspace }}/HackordV2.py"
 
-#         - name: Test
-#           run: ls -la ./dist
-
 #         - name: Save Hackord Linux Binary
 #           uses: actions/upload-artifact@v3
 #           with:
-#             name: hackord_linux
+#             name: hackord_linux.zip
 #             path: ${{ github.workspace }}/dist/*
