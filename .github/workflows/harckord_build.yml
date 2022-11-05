@@ -43,7 +43,13 @@ jobs:
         run: pyinstaller --noconfirm --onefile --console --icon "NONE" --upx-dir "${{ github.workspace }}/upx-4.0.0-win64" --clean --log-level "ERROR" --add-data "${{ github.workspace }}/mod;mod/" --add-data "${{ github.workspace }}/haisolver;haisolver/"  "${{ github.workspace }}/HackordV2.py"
 
       - name: Test
-        run: dir
+        run: dir ./dist
+
+      - name: Save Hackord Windows Executable
+        uses: actions/upload-artifact@v3
+        with:
+          name: hackord_windows
+          path: ${{ github.workspace }}/dist/*
 
   package_linux:
       runs-on: linux-latest
@@ -80,4 +86,10 @@ jobs:
           run: pyinstaller --noconfirm --onefile --console --icon "NONE" --upx-dir "${{ github.workspace }}/upx-4.0.0-amd64_linux" --clean --log-level "ERROR" --add-data "${{ github.workspace }}/mod;mod/" --add-data "${{ github.workspace }}/haisolver;haisolver/"  "${{ github.workspace }}/HackordV2.py"
 
         - name: Test
-          run: ls -la
+          run: ls -la ./dist
+
+        - name: Save Hackord Linux Binary
+          uses: actions/upload-artifact@v3
+          with:
+            name: hackord_linux
+            path: ${{ github.workspace }}/dist/*
