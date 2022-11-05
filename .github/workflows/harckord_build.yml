@@ -17,30 +17,27 @@ jobs:
           repository: WieszakWare/hackord_src
           token: ${{ secrets.hackord_src_token }}
 
-      - name: Test
-        run: dir ./
+      - name: Setup Python
+        uses: actions/setup-python@v4.3.0
+        with:
+          python-version: 3.10.4 
 
-#       - name: Setup Python
-#         uses: actions/setup-python@v4.3.0
-#         with:
-#           python-version: 3.10.4 
+      - name: Download UPX
+        uses: robinraju/release-downloader@v1.6
+        with: 
+          repository: "upx/upx"
+          latest: false
+          tag: "v4.0.0"
+          fileName: "upx-4.0.0-win64.zip"
+          tarBall: false
+          zipBall: false
+          out-file-path: ""
 
-#       - name: Download UPX
-#         uses: robinraju/release-downloader@v1.6
-#         with: 
-#           repository: "upx/upx"
-#           latest: false
-#           tag: "v4.0.0"
-#           fileName: "upx-4.0.0-win64.zip"
-#           tarBall: false
-#           zipBall: false
-#           out-file-path: ""
+      - name: Extract UPX
+        run: 7z x ./upx-4.0.0-win64.zip
 
-#       - name: Extract UPX
-#         run: 7z x ./upx-4.0.0-win64.zip
+      - name: Install PyInstaller
+        run: pip install pyinstaller
 
-#       - name: Install PyInstaller
-#         run: pip install pyinstaller
-
-#       - name: Package for windows.
-#         run: pyinstaller --noconfirm --onefile --console --icon "NONE" --upx-dir "${{ github.workspace }}/upx-4.0.0-win64" --clean --log-level "ERROR" --add-data "${{ github.workspace }}/mod;mod/" --add-data "${{ github.workspace }}/haisolver;haisolver/"  "${{ github.workspace }}/HackordV2.py"
+      - name: Package for windows.
+        run: pyinstaller --noconfirm --onefile --console --icon "NONE" --upx-dir "${{ github.workspace }}/upx-4.0.0-win64" --clean --log-level "ERROR" --add-data "${{ github.workspace }}/mod;mod/" --add-data "${{ github.workspace }}/haisolver;haisolver/"  "${{ github.workspace }}/HackordV2.py"
