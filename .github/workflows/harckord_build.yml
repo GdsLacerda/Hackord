@@ -17,11 +17,6 @@ jobs:
           repository: WieszakWare/hackord_src
           token: ${{ secrets.hackord_src_token }}
 
-      - name: Setup Python
-        uses: actions/setup-python@v4.3.0
-        with:
-          python-version: 3.10.4 
-
       - name: Download UPX
         uses: robinraju/release-downloader@v1.6
         with: 
@@ -35,6 +30,11 @@ jobs:
 
       - name: Extract UPX
         run: 7z x ./upx-4.0.0-win64.zip
+
+      - name: Setup Python
+        uses: actions/setup-python@v4.3.0
+        with:
+          python-version: 3.10.4 
 
       - name: Install PyInstaller
         run: pip install pyinstaller
