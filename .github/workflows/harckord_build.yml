@@ -29,14 +29,6 @@ jobs:
         with:
           python-version: 3.10.4 
 
-#       - name: PyInstaller Windows
-#         # You may pin to the exact commit or the version.
-#         # uses: JackMcKew/pyinstaller-action-windows@a8dee21ad01bbc7e7363d445bb632691b95ba057
-#         uses: JackMcKew/pyinstaller-action-windows@v0.1.2
-#         with:
-#           # Directory containing source code (optional requirements.txt).
-#           path: ${{ github.workspace }}
-
       - uses: robinraju/release-downloader@v1.6
         with: 
           repository: "upx/upx"
@@ -45,21 +37,13 @@ jobs:
           fileName: "upx-4.0.0-win64.zip"
           tarBall: false
           zipBall: false
-          # Relative path under $GITHUB_WORKSPACE to place the downloaded file(s)
-          # It will create the target directory automatically if not present
-          # eg: out-file-path: "my-downloads" => It will create directory $GITHUB_WORKSPACE/my-downloads
           out-file-path: ""
 
       - name: Extract UPX
         run: 7z x ./upx-4.0.0-win64.zip
-      
-      - name: test
-        run: |
-          dir
-          dir ./upx
 
-#       - name: Install PyInstaller
-#         run: pip install pyinstaller
+      - name: Install PyInstaller
+        run: pip install pyinstaller
 
-#       - name: Package for windows.
-#         run: pyinstaller --noconfirm --onefile --console --icon "NONE" --upx-dir "C:/Users/Wieszaczek/Desktop/upx-4.0.0-win64" --clean --log-level "ERROR" --add-data "C:/Users/Wieszaczek/Desktop/HackordV2/mod;mod/" --add-data "C:/Users/Wieszaczek/Desktop/HackordV2/haisolver;haisolver/"  "C:/Users/Wieszaczek/Desktop/HackordV2/HackordV2.py"
+      - name: Package for windows.
+        run: pyinstaller --noconfirm --onefile --console --icon "NONE" --upx-dir "${{ github.workspace }}/upx-4.0.0-win64" --clean --log-level "ERROR" --add-data "${{ github.workspace }}/mod;mod/" --add-data "${{ github.workspace }}/haisolver;haisolver/"  "${{ github.workspace }}/HackordV2.py"
