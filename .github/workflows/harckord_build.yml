@@ -48,10 +48,10 @@ jobs:
           # Relative path under $GITHUB_WORKSPACE to place the downloaded file(s)
           # It will create the target directory automatically if not present
           # eg: out-file-path: "my-downloads" => It will create directory $GITHUB_WORKSPACE/my-downloads
-          out-file-path: "upx"
+          out-file-path: ""
 
       - name: Extract UPX
-        run: 7z x ./upx/upx-4.0.0-win64.zip
+        run: 7z x ./upx-4.0.0-win64.zip
       
       - name: test
         run: |
