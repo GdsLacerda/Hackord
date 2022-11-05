@@ -33,6 +33,9 @@
 
 
 ## **Running Hackord**
+
+### Hackord V2 is closed source as we do not want our methods to be public, so you will have to trust our builds and if you don't trust us, just run it inside of vm.
+
 Some **VERY IMPORTANT** info before we start.  
 - Owner of Hackord ~~unfortunately~~ is developing on Windows and because we don't have infinite time (school etc) we can't test Hackord on Linux/Mac OS. So if you happen to be running one of those systems and ran into some issues, please report them, as our goal is to make Hackord platform independent.  
 - Hackord relies on `chromedriver` which is platform specific binary so in `chromedrivers` folder we provided binaries for Windows, MacOS and Linux, but if you have 32-bit computer or linux with custom kernel you might need to [download right binary](https://chromedriver.chromium.org/downloads) for your system, in a case of custom linux kernel, well... at this stage you should figure that out yourself.  
