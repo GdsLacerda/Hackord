@@ -51,45 +51,45 @@ jobs:
           name: hackord_windows
           path: ${{ github.workspace }}/dist/*
 
-  package_linux:
-      runs-on: linux-latest
-      steps:
-        - name: Download WieszakWare/hackord_src
-          uses: actions/checkout@v2.5.0
-          with:
-            repository: WieszakWare/hackord_src
-            token: ${{ secrets.hackord_src_token }}
+#   package_linux:
+#       runs-on: linux-latest
+#       steps:
+#         - name: Download WieszakWare/hackord_src
+#           uses: actions/checkout@v2.5.0
+#           with:
+#             repository: WieszakWare/hackord_src
+#             token: ${{ secrets.hackord_src_token }}
 
-        - name: Download UPX
-          uses: robinraju/release-downloader@v1.6
-          with: 
-            repository: "upx/upx"
-            latest: false
-            tag: "v4.0.0"
-            fileName: "upx-4.0.0-amd64_linux.tar.xz"
-            tarBall: false
-            zipBall: false
-            out-file-path: ""
+#         - name: Download UPX
+#           uses: robinraju/release-downloader@v1.6
+#           with: 
+#             repository: "upx/upx"
+#             latest: false
+#             tag: "v4.0.0"
+#             fileName: "upx-4.0.0-amd64_linux.tar.xz"
+#             tarBall: false
+#             zipBall: false
+#             out-file-path: ""
 
-        - name: Extract UPX
-          run: 7z x ./upx-4.0.0-amd64_linux.tar.xz
+#         - name: Extract UPX
+#           run: 7z x ./upx-4.0.0-amd64_linux.tar.xz
 
-        - name: Setup Python
-          uses: actions/setup-python@v4.3.0
-          with:
-            python-version: 3.10.4 
+#         - name: Setup Python
+#           uses: actions/setup-python@v4.3.0
+#           with:
+#             python-version: 3.10.4 
 
-        - name: Install Python Packages
-          run: pip install -r requirements.txt
+#         - name: Install Python Packages
+#           run: pip install -r requirements.txt
 
-        - name: Install PyInstaller
-          run: pip install pyinstaller
+#         - name: Install PyInstaller
+#           run: pip install pyinstaller
 
-        - name: Package for linux.
-          run: pyinstaller --noconfirm --onefile --console --icon "NONE" --upx-dir "${{ github.workspace }}/upx-4.0.0-amd64_linux" --clean --log-level "ERROR" --add-data "${{ github.workspace }}/mod;mod/" --add-data "${{ github.workspace }}/haisolver;haisolver/"  "${{ github.workspace }}/HackordV2.py"
+#         - name: Package for linux.
+#           run: pyinstaller --noconfirm --onefile --console --icon "NONE" --upx-dir "${{ github.workspace }}/upx-4.0.0-amd64_linux" --clean --log-level "ERROR" --add-data "${{ github.workspace }}/mod;mod/" --add-data "${{ github.workspace }}/haisolver;haisolver/"  "${{ github.workspace }}/HackordV2.py"
 
-        - name: Save Hackord Linux Binary
-          uses: actions/upload-artifact@v3
-          with:
-            name: hackord_linux
-            path: ${{ github.workspace }}/dist/*
+#         - name: Save Hackord Linux Binary
+#           uses: actions/upload-artifact@v3
+#           with:
+#             name: hackord_linux
+#             path: ${{ github.workspace }}/dist/*
