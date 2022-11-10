@@ -6,6 +6,8 @@
 [![Stars](https://img.shields.io/github/stars/wieszakware/hackord?label=Stars&style=for-the-badge)](https://github.com/wieszakware/hackord/stargazers)
 [![Forks](https://img.shields.io/github/forks/wieszakware/hackord?label=Forks&style=for-the-badge)](https://github.com/wieszakware/hackord/network/members)
 
+## Need help? [Join our Discord Server!](https://discord.gg/KCqrbVgSBF)
+
 ## **FAQ**
 **Q:** What is Hackord?  
 **A:** Hackord is automation tool for creation of discord account. 
