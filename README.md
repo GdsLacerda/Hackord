@@ -6,7 +6,7 @@
 [![Stars](https://img.shields.io/github/stars/wieszakware/hackord?label=Stars&style=for-the-badge)](https://github.com/wieszakware/hackord/stargazers)
 [![Forks](https://img.shields.io/github/forks/wieszakware/hackord?label=Forks&style=for-the-badge)](https://github.com/wieszakware/hackord/network/members)
 
-## Need help? [Join our Discord Server!](https://discord.gg/KCqrbVgSBF)
+## Need help? [Join our Discord Server!](https://discord.gg/KCqrbVgSBF) (but read [Reporting Bugs](#reporting-bugs))
 
 ## **FAQ**
 **Q:** What is Hackord?  
@@ -22,7 +22,7 @@
 **A:** If you want to propose some features you can join our [discord server](https://discord.com/invite/KCqrbVgSBF) and discuss them in [leafuware-suggestions](https://discord.com/channels/943896316373766174/1034132943284748388).
 
 **Q:** Hackord stopped working and give me some techical mumbo jumbo, **how the f\*\*\* am I supposed to get it to work?**  
-**A:** Please first read [how to report bugs](#reporting-bugs). It contains list of what information we need in order to fix a bug and also where you can report those bugs.
+**A:** Please first read [how to report bugs](#reporting-bugs). It contains list of what information we need in order to fix a bug and also wwhat you need to know before opening ticKet/issue.
 
 # **Reporting bugs**
 ## What we need to know:
