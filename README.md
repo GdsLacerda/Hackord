@@ -7,9 +7,11 @@
 [![Forks](https://img.shields.io/github/forks/wieszakware/hackord?label=Forks&style=for-the-badge)](https://github.com/wieszakware/hackord/network/members)
 
 
-## We are making changes.
-## Please wait to tomorrow for new README.
+### We are making changes.
+### Please wait to tomorrow for new README.
 
+
+Old readme:
 ```
 ## Need help? [Join our Discord Server!](https://discord.gg/KCqrbVgSBF) (but read [Reporting Bugs](#reporting-bugs))
 
