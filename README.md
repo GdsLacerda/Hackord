@@ -8,6 +8,8 @@
 
 ## Need help? [Join our Discord Server!](https://discord.gg/KCqrbVgSBF) (but read [Reporting Bugs](#reporting-bugs))
 
+#### WARNING: Even that we are on version V2, project is under heavy development and Hackord is not considered operational for now. If you want to run it, we expect some knowwlage in Python3 and some will to start using it. Even then it's not recommended as a lot of features simply does not work and have to be completly reweriten or replaced with something else.
+
 ## **FAQ**
 **Q:** What is Hackord?  
 **A:** Hackord is automation tool for creation of discord account. 
