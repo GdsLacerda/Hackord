@@ -7,12 +7,6 @@
 [![Forks](https://img.shields.io/github/forks/wieszakware/hackord?label=Forks&style=for-the-badge)](https://github.com/wieszakware/hackord/network/members)
 
 
-### We are making changes.
-### Please wait to tomorrow for new README.
-
-
-Old readme:
-```
 ## Need help? [Join our Discord Server!](https://discord.gg/KCqrbVgSBF) (but read [Reporting Bugs](#reporting-bugs))
 
 #### WARNING: Even that we are on version V2, project is under heavy development and Hackord is not considered operational for now. If you want to run it, we expect some knowwlage in Python3 and some will to start using it. Even then it's not recommended as a lot of features simply does not work and have to be completly reweriten or replaced with something else.
@@ -52,4 +46,3 @@ Old readme:
 &nbsp;  
 # **!!! DISCLAIMER !!!**
 ## **FOR EDUCATIONAL PURPOSES ONLY. HACKORD COMES WITH ABSOLUTELY NO WARRANTY. DEVELOPER/CONTRIBUTORS ARE NOT RESPONSIBLE FOR ANY DAMAGED CAUSED BY HACKORD OR ANY ACTION OF THE USER! USE IT AT YOUR OWN RISK!**
-```
