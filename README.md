@@ -1,47 +1,51 @@
 # **HACKORD**
-![HACKORD - CUTTING EDGE DISCORD ACCOUNT CREATION TOOL - WRITEN IN PYTHON3 BY LEFEU (We were unable to load banner, \*shrug\*)](./README_images/hackord_banner.png)
+![HACKORD - CUTTING EDGE DISCORD ACCOUNT CREATION TOOL - WRITEN IN PYTHON3 BY LEFEU (We were unable to load banner, \*shrug\*)](./README_images/hackord_banner.png)  
 ![Hackord Version](https://img.shields.io/github/v/release/WieszakWare/Hackord?color=red&include_prereleases&label=HACKORD%20VERSION&style=for-the-badge)
 [![Python Version](https://img.shields.io/badge/PYTHON%20VERSION-3.10.4-blue.svg?style=for-the-badge)](https://www.python.org/downloads/release/python-3104/)
-[![Downloads](https://img.shields.io/github/downloads/WieszakWare/Hackord/total?label=Downloads&style=for-the-badge)](https://github.com/WieszakWare/Hackord/releases/latest)
 [![Stars](https://img.shields.io/github/stars/wieszakware/hackord?label=Stars&style=for-the-badge)](https://github.com/wieszakware/hackord/stargazers)
-[![Forks](https://img.shields.io/github/forks/wieszakware/hackord?label=Forks&style=for-the-badge)](https://github.com/wieszakware/hackord/network/members)
-
-
-## Need help? [Join our Discord Server!](https://discord.gg/KCqrbVgSBF) (but read [Reporting Bugs](#reporting-bugs))
-
-#### WARNING: Even that we are on version V2, project is under heavy development and Hackord is not considered operational for now. If you want to run it, we expect some knowwlage in Python3 and some will to start using it. Even then it's not recommended as a lot of features simply does not work and have to be completly reweriten or replaced with something else.
 
 ## **FAQ**
 **Q:** What is Hackord?  
-**A:** Hackord is automation tool for creation of discord account. 
+**A:** Hackord is a tool-kit for automating actions like creating accounts, checking them, joining servers etc... 
 
-**Q:** Why this even exists? I can create accounts manually.  
-**A:** Creating accounts manually is absolute hassle, and you can be heavily rate limited by discord or sometimes even blocked for several days! Hackord aims to automate this process and also to bypass discord's limits.
+**Q:** Why is it so buggy and lacks so many features?  
+**A:** Currently Hackord is in active development and because it's a toolkit you can't expect *everything* to be *perfect*. With some time it will became more robust and feature rich. Just give it time.
 
 **Q:** How can I be sure that it's not a virus?  
-**A:** As now Hackord V2 is propiretery you can't be sure, but we are not blocking you from running it inside vm. So if you don't trust us you can just do that.
+**A:** So first let me give you a timeline.
+ - When this project was launched (V1 and betas) it was open source.
+ - With Hackord V2, owner of Hackord has decided to take it close source.
+ - Versions V2.0.0 - V2.0.3 are closed source.
+ - From V2.0.4 to the future Hackord is going to be open source.  
 
-**Q:** Can you add feature `x` and `y`.  
-**A:** If you want to propose some features you can join our [discord server](https://discord.com/invite/KCqrbVgSBF) and discuss them in [leafuware-suggestions](https://discord.com/channels/943896316373766174/1034132943284748388).
+And now that Hacord is open sorce you can have a look your self into the code, if you don't trust our binaries you can always build it yourself or just run from the source. Currently we are not providing any build instructions as we expect some computer literacy from you. But if you are lazy you can just fork this repository and run github actions as we have build scripts prepared for our project.
 
-**Q:** Hackord stopped working and give me some techical mumbo jumbo, **how the f\*\*\* am I supposed to get it to work?**  
-**A:** Please first read [how to report bugs](#reporting-bugs). It contains list of what information we need in order to fix a bug and also wwhat you need to know before opening ticKet/issue.
+**Q:** Can you add feature **x**, **y** and fix **z**.  
+**A:** Unfortunally currently we don't have too much time to develop Hackord and because of that we may not fix a bug or add proposed features as our priority is to at lease add all already planned features. And after that start polishing it. But you are free to join our [discord server](https://discord.com/invite/KCqrbVgSBF) and discouss about Hackord and other projects.
+
+**Q:** **HELP HACKORD DOESN'T WORK AND HAVE ME SOME GOFFY AS FUCK SHIT, HOW TO FUCK AM I SUPPOSED TO GET IT UP AND RUNNING?!?!?!?!?!?!?!?!**  
+**A:** Currently there's no documentation as project is in early development and some things can change overnight so for now you will have to figure it out yourself as Hackord is not currently plug&play tool and never will be. If you encountered some bug/corner case **that's not your fault**, please read [how to report bugs](#reporting-bugs). 
+
+**Q:** Can I modify / redistribute this project?  
+**A:** Short answer: [Licensed under GPL V2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)  
+Long  answer: You are free to distribute and modify this program as long as it's licensed under GPL V2.0 and also properly credit our project.
 
 # **Reporting bugs**
 ## What we need to know:
 
 - OS/Version (eg Windows 10/Arch Linux)  
-    Note: If you are using linux please provide what terminal you are using, kernel and additional modification to system as they might be important.
-- Full Hackord console output **(READ [HACKORD CONSOLE OUTPUT WARNING](#hackord-console-output-warning))**
+    Note: If you are using linux please provide distribution, kernel, graphical environment, terminal and shell.
+- Full Hackord output **(READ [HACKORD CONSOLE OUTPUT WARNING](#hackord-console-output-warning))**
 - How to reproduce bug (what have you done).
-- Observed behaivor (what you have saw).
-- Excepted behaivor (what really happened).
+- Observed behavior (what you have saw).
+- Excepted behavior (what really happened).
 
 ## Things that you need to know:
- - We are assuming that you are using newest stable version of Hackord. We are not accepting issues if they were preformed on outdated version of Hackord. Please update it first and then check if issue still presists.
- - If you just open issue/ticket and don't provide us with the informations that we need or wait for us to ask you to provide specific information you are just going to get banned.
-### **HACKORD CONSOLE OUTPUT WARNING**
-**WARNING: Hackord may display a lot of sensitive information and while tickets are private WE ARE NOT RENSPONSIBLE FOR ANY POTENTIAL KEYS/TOKENS BEING LEAKED AND IT'S YOUR RENSPOSIBILITY TO BLACK THOSE OUT.**
+ - We are assuming that you are using newest stable version of Hackord. We are not accepting issues if they were preformed on outdated version of Hackord. Please update it first and then check if you can still reproduce issue.
+ - We are not going to "*fish*" for the information. If you don't provide information we need when you open issue, it's just going to get closed.
+
+## **HACKORD CONSOLE OUTPUT WARNING**
+### **Hackord may or may not display a lot of sensitive information or data that is being generated by it. All issues opened are public and any edits are recorded and can be view. We take no responsibility for leaked data. It's in your business to black out information that you don't want other to see.**
  
 &nbsp;  
 # **!!! DISCLAIMER !!!**
