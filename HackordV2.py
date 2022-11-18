@@ -7,8 +7,6 @@
 # > DISCLAIMER: EDUCATIONAL PURPOSES ONLY
 # > Discord: ( https://discord.gg/KCqrbVgSBF )
 
-# > IMG Render ascii: ( https://stackoverflow.com/questions/7382455/ppm-image-to-ascii-art-in-python/13843534#13843534 )
-
 VERSION = "2.0.4-AAV"
 
 import threading, sys, time, json, random, os, platform
